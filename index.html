@@ -1,0 +1,87 @@
+<!--Projeto-calculadora, não será usado para meios comerciais e nem hsopedagem na web, foi criado para portifolio e para praticar o conhecimento adquirido-->
+<!--NOME: MATHEUS BARTH CORREA-->
+<!--Feito no dia:25/09/2022-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="src/style.css">
+    <!--css interno-->
+    <style>
+        /* reset*/
+        * {
+            padding: 0;
+            margin:0;
+        }
+        /* reset*/
+        /*estilo principal do resultado da operação*/
+        #resultado {
+            background-color: white;
+            border-radius: 10px;
+            width: 185px;
+            height: 22px;
+            padding: 5px;
+            text-align: right;
+
+        }
+        /*estilo principal do resultado da operação*/
+    </style>
+      <!--css interno-->
+</head>
+<body>
+    <div class="fundo">
+        <h1 align="center" style="color:rgba(165, 164, 164, 0.562);">Use a Calculadora</h1>
+    </div>
+    <!--Calculadora-->
+    <div class="calculadora">
+        <h2 style="color:white;">CALCULADORA</h2>
+        <p id="resultado"></p>
+         <!--Tabela de numeros e operadores-->
+        <table>
+            <tr>
+                <td><button style="width:50px;" id="botao" onclick="apagar()">C</button></td>
+                <td><button id="botao" onclick="back()"><</button></td>
+                <td><button style="width:45px; "id="botao" onclick="insert('/')">/</button></td>
+                <td><button style="width:47px;" id="botao" onclick="insert('*')" >*</button></td>
+            </tr>
+            <tr>
+                <td><button style="width:50px;"id="botao" onclick="insert('7')">7</button></td>
+                <td><button id="botao" onclick="insert('8')">8</button></td>
+                <td><button id="botao" onclick="insert('9')">9</button></td>
+                <td><button style="width:47px;" id="botao" onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button style="width:50px;" id="botao" onclick="insert('4')">4</button></td>
+                <td><button id="botao" onclick="insert('5')">5</button></td>
+                <td><button id="botao" onclick="insert('6')">6</button></td>
+                <td><button id="botao" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button style="width:50px;" id="botao" onclick="insert('1')">1</button></td>
+                <td><button id="botao" onclick="insert('2')">2</button></td>
+                <td><button id="botao" onclick="insert('3')">3</button></td>
+                <td rowspan="2"><button style="height:120px;" id="botao" onclick="calcular()">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button style="width:100px;" id="botao" onclick="insert('0')">0</button></td>
+                <td><button style="width:45px;" id="botao" onclick="insert('.')">.</button></td>
+            </tr>
+        </table>
+        <!--Tabela de numeros e operadores-->
+    </div>
+    <!--Calculadora-->
+    <!--Javascript interno-->
+    <script>
+        var nome=window.prompt('Qual é o seu nome?')
+        alert(`Olá, seja bem vindo ${nome}, se quiser usar, fique a vontade.`)
+    </script>
+    <!--Javascript interno-->
+    <!--javascript externo-->
+    <script src="src/script.js"></script>
+    <!--Javascript externo-->
+</body>
+</html>

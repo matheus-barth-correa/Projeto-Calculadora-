@@ -1,0 +1,38 @@
+/*Estilo de fundo*/
+body{
+    background-image: linear-gradient(45deg, black, crimson);
+}
+/*Estilo de fundo*/
+/*estilo principal da calculadora*/
+.calculadora {
+    margin-top: 50px;
+    position:absolute;
+    top: 40%;
+    right: 32%;
+    transform: translate(-50%, -50%);
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+    align-items: center;
+    padding: 22px;
+    border-radius: 20px;
+    background-color:rgb(43, 43, 43);
+    gap:5px;
+}
+/*estilo principal da calculadora*/
+/*estilo dos botoões=numeros e operadores*/
+#botao {
+    padding: 15px;
+    font-size:20px;
+    align-items: center;
+    border-radius: 10px;
+    color:white;
+    background-color: rgb(36, 31, 31);
+}
+/*estilo dos botoões=numeros e operadores*/
+/*interatividade do cliente= Mudança da cor quando ocorre o evento de mouseenter*/
+.botao.hover {
+    background-color: black;
+}
+/*interatividade do cliente= Mudança da cor quando ocorre o evento de mouseenter*/
